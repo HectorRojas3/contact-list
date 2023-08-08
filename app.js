@@ -25,7 +25,19 @@ function borrarContacto (listaDeContactos) {
     }
 }
 
+/* Entregable proyecto integrador
+1. Creacion de la branch review-1
+2. Agregar funcion para actualizar un contacto
+*/
 
+function actualizarContacto (listaDeContactos, id, propiedadesActualizadas) {
+    if (contactIndex !== -1) {
+        Object.assign(listaDeContactos[contactIndex], propiedadesActualizadas);
+        console.log("Contacto actualizado");
+    } else {
+        console.log("No hay contacto para actualizar");
+    }
+}
 
 //borrarContacto(listaDeContactos);
 
